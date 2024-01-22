@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Show/Hide Columns</h1>
+<div mat-dialog-content>
+    <form [formGroup]="form">
+        <label formArrayName="columns" *ngFor="let column of columnsFormArray.controls; let i = index" class="block">
+          <input type="checkbox" [formControlName]="i" [(ngModel)]="columnsData[i].checked" [checked]="columnsData[i].checked">
+          {{columnsData[i].display_name}}
+        </label>
+      </form>
+</div>

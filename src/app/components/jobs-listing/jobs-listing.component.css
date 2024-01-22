@@ -1,0 +1,7 @@
+:host ::ng-deep.mat-mdc-paginator .mat-mdc-paginator-container{
+    justify-content: flex-start;
+  }
+
+  .mat-toolbar-single-row{
+    height: 48px;
+}
