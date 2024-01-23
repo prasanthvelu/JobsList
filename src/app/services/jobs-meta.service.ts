@@ -9,6 +9,6 @@ export class JobsMetaService {
   constructor(private http: HttpClient) { }
 
   getJobsMeta(){
-    return this.http.get<any>("../../assets/JSON/jobs-meta.json");
+    return this.http.get<any>("assets/JSON/jobs-meta.json");
   }
 }

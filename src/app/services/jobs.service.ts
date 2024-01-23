@@ -10,6 +10,6 @@ export class JobsService {
   constructor(private http: HttpClient) { }
 
   getJobs(){
-    return this.http.get<Jobs>("../../assets/JSON/jobs.json");
+    return this.http.get<Jobs>("assets/JSON/jobs.json");
   }
 }
